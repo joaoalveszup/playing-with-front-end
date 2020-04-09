@@ -5,43 +5,19 @@
 <head>
     <title>Estrelas</title>
     <meta charset="utf-8">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
-    <script>
-
-        function logarMensagem() {
-            console.log("Executei a função.")
-        }
-
-        function listarObjetivos() {
-            window.location.replace("http://localhost:8080/examples")
-        }
-
-        function trocarClasse() {
-
-            var arrayDeElementosDaClasse = document.getElementsByClassName("verde")
-            var classeDesejada = "vermelho";
-
-            if (arrayDeElementosDaClasse.length == 0) {
-                classeDesejada = "verde"
-                arrayDeElementosDaClasse = document.getElementsByClassName("vermelho");
-            }
-
-            while (arrayDeElementosDaClasse.length > 0) {
-                arrayDeElementosDaClasse[0].className = classeDesejada
-            }
-        }
-
-
-    </script>
-
 
     <h1>Testando Botões e JavaScript</h1>
 
     <button name="qualquer" onclick="logarMensagem()">Clique aqui para logar mensagem</button>
     <button name="qualquer" onclick="listarObjetivos()">Clique aqui para listar objetivos</button>
     <button name="qualquer" onclick="trocarClasse()">Clique aqui para trocar para vermelho</button>
+    <button name="testeBack" onclick="criaListaDoBack()">Clique aqui para chamar o back-end</button>
+
 
     <table>
         <tr class="verde">
@@ -62,7 +38,7 @@
             <td>08/04/2020</td>
             <td>Pendente</td>
         </tr>
-        <tr class="verde">
+        <tr id="trComId" class="verde">
             <td>Água</td>
             <td>60,00</td>
             <td>07/04/2020</td>
