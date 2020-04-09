@@ -29,13 +29,15 @@ function criaListaDoBack() {
         console.log(data);
 
         $.each( data, function( key, val ) {
-          items.push( "<li id='" + key + "'>" + val.exampleId + " - " + val.exampleText + "</li>" );
+          items.push( "<tr class='trJoao'> <td>" + val.exampleId + "</td><td>" + val.exampleText + "</td></tr>")
         });
 
+
+        console.log(items)
         // TRANSFORMAR EM TABLE
        
-        $( "<ul/>", {
-          "class": "my-new-list",
+        $( "<table/>", {
+          "class": "my-new-table",
           html: items.join( "" )
         }).appendTo( "body" );
       });
