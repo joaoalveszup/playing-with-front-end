@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>Estrelas</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+
+        function logarMensagem() {
+            console.log("Executei a função.")
+        }
+
+        function listarObjetivos() {
+            window.location.replace("http://localhost:8080/examples")
+        }
+
+        function trocarClasse() {
+
+            var arrayDeElementosDaClasse = document.getElementsByClassName("verde")
+            var classeDesejada = "vermelho";
+
+            if (arrayDeElementosDaClasse.length == 0) {
+                classeDesejada = "verde"
+                arrayDeElementosDaClasse = document.getElementsByClassName("vermelho");
+            }
+
+            while (arrayDeElementosDaClasse.length > 0) {
+                arrayDeElementosDaClasse[0].className = classeDesejada
+            }
+        }
+
+
+    </script>
+
+
+    <h1>Testando Botões e JavaScript</h1>
+
+    <button name="qualquer" onclick="logarMensagem()">Clique aqui para logar mensagem</button>
+    <button name="qualquer" onclick="listarObjetivos()">Clique aqui para listar objetivos</button>
+    <button name="qualquer" onclick="trocarClasse()">Clique aqui para trocar para vermelho</button>
+
+    <table>
+        <tr class="verde">
+            <td>Tipo Despesa</td>
+            <td>Valor</td>
+            <td>Vencimento</td>
+            <td>Status</td>
+        </tr>
+        <tr class="verde">
+            <td>Aluguel</td>
+            <td>170,00</td>
+            <td>08/04/2020</td>
+            <td>Pago</td>
+        </tr>
+        <tr class="verde">
+            <td>Luz</td>
+            <td>85,00</td>
+            <td>08/04/2020</td>
+            <td>Pendente</td>
+        </tr>
+        <tr class="verde">
+            <td>Água</td>
+            <td>60,00</td>
+            <td>07/04/2020</td>
+            <td>Vencido</td>
+        </tr>
+
+    </table>
+
+
+    <!-- <h1>Lista de Alunos</h1>
+    <h2 class="verde" id="titulo2">Nomes dos Estrelas fora da Caixa</h2>
+    <ul>
+        <li class="verde">Bráulio Eugênio da Silva de Carvalho</li>
+        <li>Douglas Moreira</li>
+        <li>Fábio Junior Eliotério da Silva</li>
+        <li>Jenifer Mathias dos Santos</li>
+        <li>Kofi Godwin Dove</li>
+    </ul>
+
+    <table>
+        <thead>Tabela de Tópicos do Curso</thead>
+        <tbody>
+            <tr>
+                <th>Nome</th>
+                <th>Importância</th>
+                <th>Duração</th>
+            </tr>
+            <tr>
+                <td>Front-End</td>
+                <td>Importante</td>
+                <td>2 semanas</td>
+            </tr>
+            <tr>
+                <td class="verde">Back-End</td>
+                <td>Nada Importante</td>
+                <td>1 mês</td>
+            </tr>
+            <tr>
+                <td>Lógica de Programação</td>
+                <td>Super Importante</td>
+                <td>1 mês</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Objetivo do projeto</h1>
+    <p>Através do projeto <strong>Estrelas</strong> fora da caixa, buscamos......</p> -->
+
+
+
+
+</body>

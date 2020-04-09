@@ -1,0 +1,23 @@
+li {
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 3px solid black;
+}
+
+.verde {
+    color: green;
+    font-weight: bolder;
+}
+
+.vermelho {
+    color: red;
+    font-style: italic;
+}
+
+
+
+#titulo2 {
+    font-style: italic;
+}
